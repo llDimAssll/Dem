@@ -101,7 +101,3 @@ E:\Downloads\Prog5\Dem\obj\Debug\Dem.csproj.CoreCompileInputs.cache
 E:\Downloads\Prog5\Dem\obj\Debug\Dem.csproj.CopyComplete
 E:\Downloads\Prog5\Dem\obj\Debug\Dem.exe
 E:\Downloads\Prog5\Dem\obj\Debug\Dem.pdb
-E:\Downloads\Prog5\Dem\obj\Debug\AddClient.g.cs
-E:\Downloads\Prog5\Dem\obj\Debug\AddUser.g.cs
-E:\Downloads\Prog5\Dem\obj\Debug\AddClient.baml
-E:\Downloads\Prog5\Dem\obj\Debug\AddUser.baml

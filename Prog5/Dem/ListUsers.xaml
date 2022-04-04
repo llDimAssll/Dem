@@ -33,7 +33,7 @@
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Width="90">Имя</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Lastname}" Width="90">Отчество</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Phone}" Width="90">Номер</GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Data}" Width="90">Дата</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Date}" Width="90">Дата</GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -52,15 +52,15 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Content="Фамилия"/>
-            <TextBox Grid.Row="1"/>
+            <TextBox x:Name="Surname" Grid.Row="1"/>
             <Label Grid.Row="2" Content="Имя"/>
-            <TextBox Grid.Row="3"/>
+            <TextBox x:Name="Name" Grid.Row="3"/>
             <Label Grid.Row="4" Content="Отчество"/>
-            <TextBox Grid.Row="5"/>
+            <TextBox x:Name="Lastname" Grid.Row="5"/>
             <Label Grid.Row="6" Content="Номер"/>
-            <TextBox Grid.Row="7"/>
+            <TextBox x:Name="Phone" Grid.Row="7"/>
         </Grid>
         <Button Content="Удалить клиента" Grid.Row="7" Grid.ColumnSpan="3"/>
-        <Button Content="Добавить клиента" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Button Content="Добавить клиента" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Click="Button_Click_1"/>
     </Grid>
 </Page>

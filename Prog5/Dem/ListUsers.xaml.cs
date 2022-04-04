@@ -25,6 +25,7 @@ namespace Dem
         public ListUsers()
         {
             InitializeComponent();
+            ListUser1.ItemsSource =_userService.GetAll().GetAwaiter().GetResult();
         }
 
         private readonly UserService _userService = new UserService();
@@ -43,6 +44,20 @@ namespace Dem
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            ListUser1.ItemsSource = await _userService.GetAll();
+        }
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var client = new Clients()
+            {
+                Surname = Surname.Text,
+                Name = Name.Text,
+                Lastname = Lastname.Text,
+                Phone = Phone.Text,
+                Date = DateTime.Now
+            };
+            await _userService.Create(client);
             ListUser1.ItemsSource = await _userService.GetAll();
         }
     }
